@@ -1,0 +1,257 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+img {
+  display: block;
+}
+p,h1,h2,h3,h4,h5,h6 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+ul, li, a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root {
+  --lightgray-color: #EEEFF1;
+  --accent-color: #34547A;
+  --text-p-color: #727272;
+}
+.text-p {
+  color: var(--text-p-color);
+  font-size: 16px;
+  line-height: 26px;
+}
+.text-h2 {
+  color: #000;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+}
+.text-h3 {
+  color: #000;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+}
+.text-h4 {
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
+.header {
+  background-color: var(--lightgray-color);
+  width: 100%;
+  min-height: 700px;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.header__title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 56px;
+}
+.site__icon {
+  height: 65px;
+  width: 90px;
+}
+.header__title-navbar {
+  display: flex;
+}
+.header__title-navbar a{
+  color: #000;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.header__title-navbar a:hover{
+  color: var(--accent-color);
+}
+.navbar-item {
+  margin-right: 9px;
+  padding-left: 33.5px;
+}
+.oglav__flex {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 125px;
+}
+.oglav__omg {
+  width: 357px;
+  height: 234px;
+  margin-top: 31px;
+  margin-left: 82px;
+  margin-right: 46px;
+}
+.oglav__text {
+  padding-left: 84px;
+}
+.oglav__h2 {
+  margin-bottom: 34px;
+}
+.oglav__p {
+  margin-bottom: 52px;
+  padding-left: 1.5px;
+}
+.oglav__button {
+  width: 225px;
+  height: 65px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+}
+.oglav__btn-text {
+  padding-top: 5px;
+  padding-left: 2px;
+}
+.about {
+  width: 100%;
+}
+.container-mini {
+  margin: 0 auto;
+  max-width: 540px;
+  padding-top: 78px;
+  margin-bottom: 69px;
+}
+.about__h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about__p {
+  text-align: center;
+  max-width: 540px;
+}
+.projects {
+  background-color: var(--accent-color);
+  height: 250px;
+  margin-bottom: 78px;
+}
+.projects__flex {
+  padding: 100px 0 95px;
+  display: flex;
+}
+.projects__flex-item {
+  display: flex;
+  width: 140px;
+  margin-right: 50px;
+}
+.projects__flex-item:last-child{
+  margin: 0;
+}
+.projects__icon {
+  margin-right: 20px;
+  padding-bottom: 5px;
+}
+.projects__h4 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.projects__p {
+  color: #fff;
+}
+.my-skills {
+  margin-bottom: 78px;
+}
+.container50 {
+  width: 1150px;
+  margin: 0 auto;
+}
+.my-skills__flex {
+  display: flex;
+}
+.my-skills__flex-item {
+  margin-right: 150px;
+  margin-top: 102px;
+}
+.my-skills__h3 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.skills-bar-name {
+  margin-bottom: 12px;
+}
+.skills-bar {
+  display: flex;
+  width: 445px;
+  height: 4px;
+  background-color: #999;
+  margin-bottom: 26px;
+}
+.skills-bar-completed {
+  background-color: var(--accent-color);
+}
+.my_photo {
+  width: 555px;
+  height: 450px;
+}
+.video {
+  background-color: var(--lightgray-color);
+}
+.container__video {
+  margin-bottom: 48px;
+}
+.video__h3 {
+  padding-top: 22px;
+}
+.youtube__video {
+  width: 1110px;
+  height: 600px;
+  margin-bottom: 96px;
+}
+.portfolio {
+  margin: 0;
+  padding-top: 79px;
+  margin-bottom: 77px;
+}
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 0;
+}
+.portfolio-photo {
+  width: 480px;
+}
+.partners {
+  margin-bottom: 78px;
+}
+.partners__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+
+
+
+
+
+
+
+
