@@ -53,10 +53,17 @@ ul, li, a {
   font-size: 21px;
   line-height: 25px;
 }
+.text-h5 {
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
 .header {
   background-color: var(--lightgray-color);
   width: 100%;
-  min-height: 700px;
+  padding-bottom: 146px;
 }
 .container {
   max-width: 1110px;
@@ -126,6 +133,9 @@ ul, li, a {
   text-transform: uppercase;
   border: none;
 }
+.oglav__button:hover {
+  cursor: pointer;
+}
 .oglav__btn-text {
   padding-top: 5px;
   padding-left: 2px;
@@ -151,17 +161,19 @@ ul, li, a {
   background-color: var(--accent-color);
   height: 250px;
   margin-bottom: 78px;
+  width: 100%;
 }
-.projects__flex {
-  padding: 100px 0 95px;
-  display: flex;
+.projects__grid {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
-.projects__flex-item {
+.projects__grid-item {
   display: flex;
   width: 140px;
   margin-right: 50px;
 }
-.projects__flex-item:last-child{
+.projects__grid-item:last-child{
   margin: 0;
 }
 .projects__icon {
@@ -179,7 +191,7 @@ ul, li, a {
   margin-bottom: 78px;
 }
 .container50 {
-  width: 1150px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 .my-skills__flex {
@@ -224,18 +236,17 @@ ul, li, a {
   height: 600px;
   margin-bottom: 96px;
 }
-.portfolio {
+.portfolio__grid {
   margin: 0;
   padding-top: 79px;
   margin-bottom: 77px;
-}
-.portfolio__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 0;
 }
 .portfolio-photo {
+  margin: 0 auto;
   width: 480px;
 }
 .partners {
@@ -246,6 +257,151 @@ ul, li, a {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+.website__p {
+  margin-bottom: 54px;
+}
+.website {
+  background-color: var(--lightgray-color);
+  margin-bottom: 79px;
+}
+.user__item-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.user__input-name {
+  width: 255px;
+  height: 50px;
+  margin-bottom: 20px;
+  border: none;
+  text-indent: 18px;
+  padding-top: 5px;
+}
+.user__input-email {
+  width: 255px;
+  height: 50px;
+  border: none;
+  text-indent: 18px;
+  padding-top: 5px;
+}
+.user__input-message {
+  width: 540px;
+  height: 175px;
+  border: none;
+  margin-bottom: 47px;
+  text-indent: 19px;
+  padding-top: 19px;
+  resize: none;
+  font-size: 14px;
+}
+.user__input-btn {
+  margin-left: 174px;
+  width: 190px;
+  height: 55px;
+  margin-bottom: 100px;
+  border: none;
+}
+.user__input-btn-text {
+  letter-spacing: 0.15em;
+  font-size: 14px;
+}
+.user__input-btn:hover {
+  cursor: pointer;
+}
+.footer {
+  background-color: var(--accent-color);
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__flex-item {
+  padding-top: 47px;
+  margin-bottom: 45px;
+}
+.footer__h4 {
+  padding-top: 2px;
+  margin-bottom: 12px;
+}
+.footer__item-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+@media screen and (max-width: 1280px) {
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .oglav__flex {
+    padding-right: 25px;
+  }
+  .oglav__text {
+    padding-left: 25px;
+  }
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    padding-top: 45px;
+  }
+  .projects__grid-item {
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  .projects__grid-item:last-child{
+    margin: 0 auto;
+  }
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-photo {
+    margin-bottom: 20px;
+  }
+  .youtube__video {
+    margin-left: 185px;
+    width: 740px;
+    height: 400px;
+  }
+  .partners__grid {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partners__img {
+    margin: 0 auto;
+  }
+  .my-skills {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .my-skills__flex {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .my-skills__flex-item {
+    margin: 0 auto;
+  }
+  .my_photo {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 55px;
+  }
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio-photo {
+    margin-bottom: 20px;
+  }
+}
+
+
+
 
 
 
